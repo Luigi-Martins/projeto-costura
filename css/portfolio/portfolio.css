@@ -1,0 +1,38 @@
+#portfolio h1 {
+  margin: 80px 0;
+}
+
+.fundo-portfolio {
+  background: url(/img/portfolio/fundo-portfolio1.png) no-repeat;
+  display: grid;
+  width: 100%;
+  height: 700px;
+  margin-bottom: 100px;
+}
+
+.portfolio-itens {
+  display: grid;
+  grid-template-columns: 2fr 8fr 2fr;
+}
+
+.voltar,
+.avancar {
+  background: none;
+  border: none;
+  place-self: center;
+}
+
+.carrossel {
+  place-self: center;
+}
+
+@media (max-width: 750px) {
+  .fundo-portfolio {
+    height: 500px;
+  }
+
+  .voltar,
+  .avancar {
+    width: 45px;
+  }
+}
